@@ -43,6 +43,7 @@ table.no_chart td.used {
   border: 0px solid pink; 
   background-color: pink; 
   border-right: 1px solid white;
+  border-left: 1px solid white;
 }
 
 table.no_chart td.clear {
