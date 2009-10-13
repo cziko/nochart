@@ -31,7 +31,7 @@ Installation
   <%= no_chart(label_x, label_y, data_array) %>
 </div>
 
-or add uncomment body in no_chart.css and put chart
+or uncomment body in no_chart.css and put chart
 directly in the body tags.
 
 Copyright (c) 2009 [Pawel Niznik (cziko)], released under the MIT license
