@@ -6,6 +6,7 @@ NoChart
 Installation
 =======
 
+* cp vendor/plugins/no_chart/lib/no_chart.css public/stylesheets/
 * add to your layout: <%= stylesheet_link_tag 'no_chart' %>
 * chart needs to be in html element that has height defined 
 * use <%= no_chart(label_x, label_y, data_array) %> to
