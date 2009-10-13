@@ -8,7 +8,7 @@ NoChart
 Installation
 =======
 
-* cp vendor/plugins/no_chart/lib/no_chart.css public/stylesheets/
+* cp vendor/plugins/nochart/lib/no_chart.css public/stylesheets/
 * add to your layout: <%= stylesheet_link_tag 'no_chart' %>
 * chart needs to be in html element that has height defined 
 * use <%= no_chart(label_x, label_y, data_array) %> to
@@ -26,7 +26,7 @@ Installation
                    "4", "2", "1", "1", "2", "2", 
                    "4", "2", "1", "1", "2", "2", 
                    "4", "3", "1", "13", "2", "23",
-                   "3", "2", "23", "22", "11", "3", "4"] %>
+                   "3", "2", "23", "22", "11", "3"] %>
 
   <%= no_chart(label_x, label_y, data_array) %>
 </div>
