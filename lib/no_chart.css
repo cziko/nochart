@@ -46,6 +46,11 @@ table.no_chart td.used {
   border-left: 1px solid white;
 }
 
+table.no_chart td.used:hover {
+  cursor: pointer;
+  background-color: red; 
+}
+
 table.no_chart td.clear {
   width: 3%; 
   border: 0px solid pink;
