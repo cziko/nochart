@@ -1,0 +1,53 @@
+table.no_chart {
+        width: 100%;
+        height: 100%;
+        border-width: 0px;
+        border-spacing: ;
+        border-style: none;
+        border-color: gray;
+        border-collapse: collapse;
+        background-color: white;
+}
+
+table.no_chart td {
+        padding: 0px;
+        margin: 0px;
+        font-size: 10px;
+        font-family: Arial;
+        border-width: 0px;
+        border-style: inset;
+        border-color: gray;
+        background-color: white;
+        -moz-border-radius: ;
+        text-align: center;
+}
+
+table.no_chart td.bottom {
+  width: 3%; 
+  border-top: 1px solid grey;
+}
+
+table.no_chart td.left {
+  width: 3%; 
+  border-right: 1px solid grey;
+}
+
+table.no_chart td.not_used {
+  width: 3%; 
+  border-top: 1px solid grey; 
+  border-right: 1px solid grey;
+}
+
+table.no_chart td.used {
+  width: 3%; 
+  border: 0px solid pink; 
+  background-color: pink; 
+  border-right: 1px solid white;
+}
+
+table.no_chart td.clear {
+  width: 3%; 
+  border: 0px solid pink;
+}
+
+
