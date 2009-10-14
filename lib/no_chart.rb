@@ -41,16 +41,16 @@ module NoChart
       template += "<tr>"
         (1..x_max).each do |x|
           if y == y_max and x != 1
-            template += "<td class = 'bottom'>#{label_x[x - 2]}</td>"
-          elsif y != x_max and x == 1
-            template += "<td class = 'left'>#{label_y[y_max - y - 1]}</td>"
-          elsif y == x_max
-            template += "<td class = 'not_used'></td>"
+            template += "<td class='bottom'>#{label_x[x - 2]}</td>"
+          elsif y != y_max and x == 1
+            template += "<td class='left'>#{label_y[y_max - y - 1]}</td>"
+          elsif y == y_max
+            template += "<td class='not_used'></td>"
           else
             if data_array[x-2].to_f >= label_y[y_max-y-1].to_f
-              template += "<td class = 'used'></td>"
+              template += "<td class='used'></td>"
             else
-              template += "<td class = 'clear'></td>"
+              template += "<td class='clear'></td>"
             end
           end
         end
