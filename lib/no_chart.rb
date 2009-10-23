@@ -48,7 +48,7 @@ module NoChart
             template += "<td class='not_used'></td>"
           else
             if data_array[x-2].to_f >= label_y[y_max-y-1].to_f
-              template += "<td class='used'></td>"
+              template += "<td class='used column_#{x-1}'></td>"
             else
               template += "<td class='clear'></td>"
             end
