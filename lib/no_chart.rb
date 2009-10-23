@@ -4,35 +4,6 @@ module NoChart
     x_max = label_x.nitems + 1
     y_max = label_y.nitems + 1
 
-    # content_tag :table, :class => 'no_chart' do
-    #   (1..y_max).each do |y|
-    #     content_tag :tr do
-    #       (1..x_max).each do |x|
-    #         if y == y_max and x != 1
-    #           content_tag :td, :class => 'bottom' do
-    #             label_x[x - 1]
-    #           end
-    #         elsif y != x_max and x == 1
-    #           content_tag :td, :class => 'left' do
-    #             label_y[y_max - y - 1]
-    #           end
-    #         elsif y == x_max
-    #           content_tag :td, :class => 'not_used' do
-    #           end
-    #         else
-    #           if data_array[x-1].to_f > label_y[y_max-y-1].to_f
-    #             content_tag :td, :class => 'used' do
-    #             end
-    #           else
-    #             content_tag :td, :class => 'clear' do
-    #             end
-    #           end
-    #         end
-    #       end
-    #     end
-    #   end
-    # end
-
     # This solution is so ugly that makes me 
     # want to puke :D.
     template = ""
@@ -47,7 +18,7 @@ module NoChart
           elsif y == y_max
             template += "<td class='not_used'></td>"
           else
-            # TODO: need to introduce callbacks here!!
+            # TODO: need to introduce callbacks here!!!
             if data_array[x-2].to_f >= label_y[y_max-y-1].to_f
               template += "<td class='used column_#{x-1}' onMouseOver=\"$('no_chart').select('td.column_#{x-1}').each(function(item){item.addClassName('selected')});\" onMouseOut=\"$('no_chart').select('td.column_#{x-1}').each(function(item){item.removeClassName('selected')});\"></td>"
             else
