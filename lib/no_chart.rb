@@ -18,9 +18,8 @@ module NoChart
           elsif y == y_max
             template += "<td class='not_used'></td>"
           else
-            # TODO: need to introduce callbacks here!!!
             if data_array[x-2].to_f >= label_y[y_max-y-1].to_f
-              template += "<td class='used column_#{x-1}' onMouseOver=\"$('no_chart').select('td.column_#{x-1}').each(function(item){item.addClassName('selected')});\" onMouseOut=\"$('no_chart').select('td.column_#{x-1}').each(function(item){item.removeClassName('selected')});\"></td>"
+              template += "<td class='used column_#{x-1}'></td>"
             else
               template += "<td class='clear'></td>"
             end
