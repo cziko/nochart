@@ -59,7 +59,7 @@ table.no_chart td.used {
 
 table.no_chart td.used:hover {
   cursor: pointer;
-  background-color: #AAAAAA; 
+  background-color: #FF3366; 
 }
 
 table.no_chart td.clear {
