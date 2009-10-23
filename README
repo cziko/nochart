@@ -19,8 +19,8 @@ Installation
 * cp vendor/plugins/nochart/lib/no_chart.css public/stylesheets/
 * cp vendor/plugins/nochart/lib/no_chart.js public/javascripts/
 * add to your layout: <%= stylesheet_link_tag 'no_chart' %>
-* if want to yous js UI add to your layout: <%= javascript_include_tag 'no_chart' %>
-* if want to yous js UI add to your body tag: onload="load_no_chart_ui();"
+* if want to use js UI add to your layout: <%= javascript_include_tag 'no_chart' %>
+* if want to use js UI add to your body tag: onload="load_no_chart_ui();"
 * chart needs to be in html element that has height defined 
 * use <%= no_chart(label_x, label_y, data_array) %> to
   generate your html chart
