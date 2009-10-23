@@ -17,9 +17,6 @@ table.no_chart {
         background-color: white;
 }
 
-table.no_chart tr {
-}
-
 table.no_chart td {
         padding: 0px;
         margin: 0px;
@@ -59,7 +56,7 @@ table.no_chart td.used {
 
 table.no_chart td.used:hover {
   cursor: pointer;
-  background-color: #AAAAAA; 
+  background-color: #aaaaaa; 
 }
 
 table.no_chart td.clear {
@@ -69,4 +66,13 @@ table.no_chart td.clear {
 
 table.no_chart td.selected{
   background-color: #FF3366;
+}
+
+table.no_chart td .link{
+  display: block;
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  margin: 0px;
+  padding: 0px;
 }
